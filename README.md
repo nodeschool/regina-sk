@@ -1,6 +1,6 @@
 # NodeSchool YQR
 
-<img src="https://github.com/nodeschool/regina-sk/blob/gh-pages/assets/images/nodeschool-yqr.png" alt="NodeSchool YQR" style="height: 80px; width: 80px; float: right;" />
+<img src="https://github.com/nodeschool/regina-sk/blob/gh-pages/assets/images/nodeschool-yqr.png" alt="NodeSchool YQR" width="200px" height="200px" style="float: right;" />
 
 ## What is NodeSchool?
 
