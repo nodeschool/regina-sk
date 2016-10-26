@@ -23,7 +23,7 @@
 
     <div class="container-fluid no-padding">
 
-      <div>
+      <div class="form-group">
         <img src="assets/images/nodeschool-yqr.png" alt="NodeSchool YQR" class="pull-left-lg event-logo" />
         <div id="eventRsvpCard" class="event-invite">
           <div class="hidden-sm hidden-xs pull-right event-social-media-links">
@@ -50,11 +50,10 @@
         <div class="clearfix"></div>
       </div>
 
-      <div id="eventContentArea" class="row">
-        <div class="col-md-6">
-          <div class="event-details">
-            <h3>Event Details</h3>
-            <p>We will be offering the following lessons:</p>
+      <div id="eventContentArea" class="form-group">
+        <div class="event-details">
+          <div class="container">
+            <h3>We will be offering the following lessons at NodeSchool YQR on November 19<sup>th</sup>, 2016</h3>
             <ul>
               <li><a href="https://github.com/workshopper/learnyounode" target="_blank">Learn You Node</a>: for learning node</li>
               <li><a href="https://github.com/sethvincent/javascripting" target="_blank">Javascripting</a>: for those interested in learning JavaScript itself</li>
@@ -64,8 +63,9 @@
             Read about the code of conduct <a href="codeofconduct.html">here</a>.
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="event-details">
+
+        <div class="event-details before-you-come">
+          <div class="container">
             <h3>Before You Come...</h3>
             <p>We want to make sure everyone who comes to NodeSchool gets the most out of it, so here are a few things to keep in mind:</p>
             <p class="que">Never done code before - no HTML or CSS or Excel formulas?</p>
@@ -92,21 +92,22 @@
         </div>
       </div>
 
-      <div id="bottomEventRsvpContainer" class="form-group text-center">
-        <a target="_blank" href="https://ti.to/gasbuddy-regina/nodeschoolyqr" class="btn btn-lg btn-primary" title="click to register">
-          Register for the Saturday, November 19<sup>th</sup>, 2016
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+      <footer>
+        <div id="bottomEventRsvpContainer" class="form-group text-center">
+          <a target="_blank" href="https://ti.to/gasbuddy-regina/nodeschoolyqr" class="btn btn-lg btn-primary" title="click to register">
+            Register for the Saturday, November 19<sup>th</sup>, 2016
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
 
-      <div class="form-group text-center event-sponsors">
-        <h2>Event sponsored by</h2>
-        <p>&nbsp;</p>
-        <a href="http://gbregina.com">
-          <img src="assets/images/sponsor-gasbuddy.png" alt="GasBuddy - For the road ahead" class="img img-responsive center-block" />
-        </a>
-      </div>
-
+        <div class="form-group text-center event-sponsors">
+          <h2>Event sponsored by</h2>
+          <p>&nbsp;</p>
+          <a href="http://gbregina.com">
+            <img src="assets/images/sponsor-gasbuddy.png" alt="GasBuddy - For the road ahead" class="img img-responsive center-block" />
+          </a>
+        </div>
+      </footer>
     </div>
 
     <script src="assets/js/jquery.min.js"></script>
