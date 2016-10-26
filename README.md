@@ -1,6 +1,6 @@
 # NodeSchool YQR
 
-![logo](https://github.com/nodeschool/regina-sk/blob/gh-pages/assets/images/nodeschool-yqr.png) "NodeSchool YQR"
+![logo](https://github.com/nodeschool/regina-sk/blob/gh-pages/assets/images/nodeschool-yqr.png)
 
 ## What is NodeSchool?
 
