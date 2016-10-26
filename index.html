@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="favicon" content="assets/images/nodeschool-yqr.png">
 
-    <title>NodeSchool - YQR</title>
+    <title>NodeSchool YQR</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <script src="assets/js/modernizr.min.js"></script>
@@ -17,7 +19,95 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="no-cover">
+
+    <div class="container-fluid no-padding">
+
+      <div class="form-group">
+        <img src="assets/images/nodeschool-yqr.png" alt="NodeSchool YQR" class="pull-left-lg event-logo" />
+        <div id="eventRsvpCard" class="event-invite">
+          <div class="hidden-sm hidden-xs pull-right event-social-media-links">
+            <a target="_blank" href="http://github.com/nodeschool/regina-sk" title="Visit github repository">
+              <i class="fa fa-github-square"></i>
+            </a>
+          </div>
+          <h1>NodeSchool YQR</h1>
+          <p class="lead">
+            A community learning event focused around open source workshops that teach web software skills.
+          </p>
+          <p>Join us for the first-ever Saskatchewan chapter: <strong>NodeSchool YQR!</strong></p>
+        </div>
+        <div class="event-rsvp-action-area">
+          <a target="_blank" href="https://ti.to/gasbuddy-regina/nodeschoolyqr" class="btn btn-lg btn-primary" title="click to register">
+            RSVP
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+          <span class="event-time">
+            <span class="hidden-xs hidden-sm">Saturday,</span>
+            November 19<sup>th</sup>, 2016 Time: 1PM - 4PM
+          </span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div id="eventContentArea" class="form-group">
+        <div class="event-details">
+          <div class="container">
+            <h3>We will be offering the following lessons at NodeSchool YQR on November 19<sup>th</sup>, 2016</h3>
+            <ul>
+              <li><a href="https://github.com/workshopper/learnyounode" target="_blank">Learn You Node</a>: for learning node</li>
+              <li><a href="https://github.com/sethvincent/javascripting" target="_blank">Javascripting</a>: for those interested in learning JavaScript itself</li>
+              <li><a href="https://github.com/substack/stream-adventure" target="_blank">Stream Adventure</a>: for a more advanced lesson</li>
+              <li><a href="http://nodeschool.io/#workshoppers" target="_blank">Advanced Topics</a>: Explore any of the other adanced NodeSchool topics like WebGL, Web Audio, Browserify, Reacty, etc. If there's a NodeSchool lesson, we will help you with it.</li>
+            </ul>
+            Read about the code of conduct <a href="codeofconduct.html">here</a>.
+          </div>
+        </div>
+
+        <div class="event-details before-you-come">
+          <div class="container">
+            <h3>Before You Come...</h3>
+            <p>We want to make sure everyone who comes to NodeSchool gets the most out of it, so here are a few things to keep in mind:</p>
+            <p class="que">Never done code before - no HTML or CSS or Excel formulas?</p>
+            <p class="ans">
+              You should at least have a text editor (notepad, notepad++, Atom etc.) and be able to open your command line tool (Command Prompt, Powershell, Git Bash ot Terminal).<br / />
+              If you're looking to get up to speed on the command line,
+              read the first 8 chapters of <a href="http://cli.learncodethehardway.org/book/">Learn CLI the Hard Way</a>.
+            </p>
+            <p class="que">Do I need anything to attend this event?</p>
+            <p class="ans">You will need a laptop, let us know if for any reason you need a laptop arranged and we can make an arrangement.</p>
+            <p class="que">Workshop Preparation</p>
+            <p class="ans">
+              You should <a href="http://nodejs.org">install node</a> before you come.<br />
+              Once you install it, open command line and run "node -v" command to print the version of node installed on your machine.<br />
+              Also try "npm -v" to verify that npm was installed with node like it should have been.
+            </p>
+            <p class="que">Anything else?</p>
+            <p class="ans">
+              It would be great if you could install the course you plan to work on during the event.<br/>
+              Find instructions at <a href="http://nodeschool.io/#workshoppers">nodeschool.io</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div id="bottomEventRsvpContainer" class="form-group text-center">
+          <a target="_blank" href="https://ti.to/gasbuddy-regina/nodeschoolyqr" class="btn btn-lg btn-primary" title="click to register">
+            Register for the Saturday, November 19<sup>th</sup>, 2016
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+
+        <div class="form-group text-center event-sponsors">
+          <h2>Event sponsored by</h2>
+          <p>&nbsp;</p>
+          <a href="http://gbregina.com">
+            <img src="assets/images/sponsor-gasbuddy.png" alt="GasBuddy - For the road ahead" class="img img-responsive center-block" />
+          </a>
+        </div>
+      </footer>
+    </div>
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
