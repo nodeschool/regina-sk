@@ -132,6 +132,50 @@ footer {
   padding-bottom: 50px;
 }
 
+div.mentor-photo, div.mentor {
+  display: inline-block;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+div.mentor-photo {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+}
+div.mentor {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+}
+div.mentor-1 .mentor{
+  background-image: url(../images/mentors/DSC_0001.jpg);
+  background-size: 300px 250px;
+}
+div.mentor-2 .mentor{
+  background-image: url(../images/mentors/DSC_0002.jpg);
+  background-size: 130px 180px;
+}
+div.mentor-3 .mentor{
+  background-image: url(../images/mentors/DSC_0003.jpg);
+  background-size: 270px 220px;
+}
+div.mentor-4 .mentor{
+  background-image: url(../images/mentors/DSC_0004.jpg);
+  background-size: 200px 195px;
+}
+div.mentor-5 .mentor{
+  background-image: url(../images/mentors/DSC_0005.jpg);
+  background-size: 250px 180px;
+}
+div.mentor-6 .mentor{
+  background-image: url(../images/mentors/DSC_0006.jpg);
+  background-size: 210px 205px;
+}
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
   .event-invite {
