@@ -1,18 +1,70 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
+:root {
+  --sunset-red : #EE5340;
+  --dark-sunset-red: #e14f3d;
+  --asphalt-grey : #63666A;
+  --dark-grey: #5c5e62;
+  --lane-marker-white : #fcfcfc;
+  --lane-marker-white-light: #fff;
+  --blue-highways-dark : #0097A9;
+  --blue-highways: #039eb1;
+  --oceanside-blue-dark : #006272;
+  --oceanside-blue: #0d6b7b;
+  --go-green : #97D700;
+  --go-gree-dark: #8dc900;
+  --grey: #ccc;
+}
+
+
 body {
   font-family: 'Open Sans', arial, helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
-  background: url('../images/nodeschool-yqr-cover.jpg') no-repeat top left #FAFAFA fixed;
+  background: url('../images/nodeschool-yqr-cover.jpg') no-repeat top left var(--lane-marker-white) fixed;
   background-size: 100% 100%;
-  color: #333333;
+  color: #asphalt-grey;
 }
+
+h1 {
+  font-family: 'Open Sans Semibold', 'Open Sans', sans-serif;
+  font-size: 38px;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: 'Open Sans Bold', 'Open Sans', sans-serif;
+  font-size: 36px;
+}
+h3 {
+  font-family: 'Open Sans Light', 'Open Sans', sans-serif;
+  font-size: 36px;
+}
+h4 {
+  font-family: 'Open Sans Semibold', 'Open Sans', sans-serif;
+  font-size: 22px;
+}
+h4 {
+  font-family: 'Open Sans Semibold', 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+h6 {
+  font-family: 'Open Sans Light Italic', 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+p {
+  font-family: 'Open Sans Light Italic', 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
 
 body.no-cover {
   background-image: none;
-  background-color: #F2F3F3;
+  background-color: var(--lane-marker-white);
+}
+
+body.grey-body {
+  background-color: var(--grey);
 }
 
 .no-padding {
@@ -52,8 +104,8 @@ img.event-logo {
   display: block;
 }
 .event-invite {
-  background-color: #0097A9;
-  color: #fff;
+  background-color: var(--blue-highways-dark);
+  color: var(--lane-marker-white-light);
   padding: 80px 0 80px 400px;
 }
 .event-invite h1, .event-content.registration-content h1 {
@@ -67,8 +119,8 @@ img.event-logo {
   font-weight: bold;
 }
 .event-rsvp-action-area, footer {
-  background-color: #E5E5E5;
-  color: #333333;
+  background-color: #e5e5e5;
+  color: var(--asphalt-grey);
 }
 .event-rsvp-action-area {
   padding: 50px 0 50px 400px;
@@ -83,10 +135,10 @@ img.event-logo {
 .event-social-media-links a{
   font-size: 48px;
   margin-right: 20px;
-  color: #fff
+  color: var(--lane-marker-white);
 }
 .event-social-media-links a .fa{
-  color: #fff;
+  color: var(--lane-marker-white);
 }
 .event-details {
   border-radius: 15px;
@@ -108,22 +160,33 @@ img.event-logo {
 }
 
 .before-you-come {
-  background-color: #F05340;
-  color: #fff;
+  background-color: var(--oceanside-blue-dark);
+  color: var(--lane-marker-white);
   margin: 0;
   border-radius: 0;
 }
 .before-you-come a {
-  color: #fff;
+  color: var(--lane-marker-white);
   text-decoration: underline;
 }
 
-.event-content.registration-content {
+.event-content.registration-content,
+.event-details.code-of-conduct {
   padding: 50px 0;
-  background-color: #fff;
-  border: solid 1px #F3F3F3;
+  background-color: var(--lane-marker-white);
+  border: solid 1px var(--asphalt-grey);
   line-height: 1.8em;
   margin-bottom: 20px;
+}
+div.code-of-conduct-container .code-of-conduct {
+  border-radius: 0;
+  padding: 15px 20px;
+  margin: 0 0 50px;
+}
+
+div.code-of-conduct-container img.event-logo {
+  position: relative;
+  margin: 20px auto;
 }
 
 footer {
@@ -141,8 +204,8 @@ div.mentor-photo {
   width: 200px;
   height: 200px;
   padding: 10px;
-  background-color: #FFFFFF;
-  border: 1px solid #E5E5E5;
+  background-color: var(--lane-marker-white-light);
+  border: 1px solid var(--asphalt-gray);
 }
 div.mentor {
   background-repeat: no-repeat;
@@ -200,6 +263,9 @@ div.mentor-6 .mentor{
   .event-details {
     min-height: auto;
   }
+  .event-invite h1, .event-content.registration-content h1 {
+    font-size: 14px;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -227,6 +293,9 @@ div.mentor-6 .mentor{
     min-height: auto !important;
     padding: 20px;
   }
+  .event-invite h1, .event-content.registration-content h1 {
+    font-size: 14px;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -237,5 +306,15 @@ div.mentor-6 .mentor{
 }
 
 div.tito-wrapper {
-  background-color: #fff;
+  background-color: var(--lane-marker-white);
+}
+
+
+.btn.btn-primary {
+    background-color: var(--blue-highways);
+    border-color: var(--blue-highways-dark);
+    border-radius: 30px;
+}
+.btn.btn-primary:hover {
+  background-color: var(--oceanside-blue-dark);
 }
