@@ -75,8 +75,16 @@ body.grey-body {
   margin-top: 0;
 }
 
+.home-page-cover-content {
+  background: url('../images/home-page-cover-bkg.png') no-repeat top center #2E9FBF;
+}
+
 #eventRsvpCard {
   margin-top: -20px;
+}
+
+#eventContentArea ul li {
+  line-height: 2em;
 }
 
 img.event-logo {
@@ -117,6 +125,10 @@ img.event-logo {
   padding-left: 20px;
   font-size: 14px;
   font-weight: bold;
+}
+
+.home-page-cover-content .event-invite {
+  background-color: transparent;
 }
 .event-rsvp-action-area, footer {
   background-color: #e5e5e5;
@@ -195,50 +207,13 @@ footer {
   padding-bottom: 50px;
 }
 
-div.mentor-photo, div.mentor {
-  display: inline-block;
-  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+div.mentor-photos {
+  text-align: center;
 }
-div.mentor-photo {
-  width: 200px;
-  height: 200px;
-  padding: 10px;
-  background-color: var(--lane-marker-white-light);
-  border: 1px solid var(--asphalt-gray);
+div.mentor-photo img {
+  margin: 0 5px;
 }
-div.mentor {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100% 100%;
-  width: 180px;
-  height: 180px;
-  margin: 0 auto;
-}
-div.mentor-1 .mentor{
-  background-image: url(../images/mentors/DSC_0001.jpg);
-  background-size: 300px 250px;
-}
-div.mentor-2 .mentor{
-  background-image: url(../images/mentors/DSC_0002.jpg);
-  background-size: 130px 180px;
-}
-div.mentor-3 .mentor{
-  background-image: url(../images/mentors/DSC_0003.jpg);
-  background-size: 270px 220px;
-}
-div.mentor-4 .mentor{
-  background-image: url(../images/mentors/DSC_0004.jpg);
-  background-size: 200px 195px;
-}
-div.mentor-5 .mentor{
-  background-image: url(../images/mentors/DSC_0005.jpg);
-  background-size: 250px 180px;
-}
-div.mentor-6 .mentor{
-  background-image: url(../images/mentors/DSC_0006.jpg);
-  background-size: 210px 205px;
-}
+
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
   .event-invite {
