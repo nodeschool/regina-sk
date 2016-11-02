@@ -5,6 +5,7 @@
   --dark-sunset-red: #e14f3d;
   --asphalt-grey : #63666A;
   --dark-grey: #5c5e62;
+  --dark: #333;
   --lane-marker-white : #fcfcfc;
   --lane-marker-white-light: #fff;
   --blue-highways-dark : #0097A9;
@@ -24,7 +25,7 @@ body {
   padding: 0;
   background: url('../images/nodeschool-yqr-cover.jpg') no-repeat top left var(--lane-marker-white) fixed;
   background-size: 100% 100%;
-  color: #asphalt-grey;
+  color: var(--asphalt-grey);
 }
 
 h1 {
@@ -76,7 +77,8 @@ body.grey-body {
 }
 
 .home-page-cover-content {
-  background: url('../images/home-page-cover-bkg.png') no-repeat top center #2E9FBF;
+  background: url('../images/home-page-cover-bkg.png') no-repeat top center;
+  background-color: var(--blue-highways);
 }
 
 #eventRsvpCard {
@@ -120,6 +122,12 @@ img.event-logo {
   text-transform: uppercase;
   font-size: 48px;
   font-weight: 400;
+}
+#eventRsvpCard {
+  text-shadow: 0 2px var(--dark);
+}
+#eventRsvpCard h1 {
+  text-shadow: 3px 4px var(--dark);
 }
 .event-time {
   padding-left: 20px;
