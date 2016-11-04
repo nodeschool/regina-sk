@@ -218,6 +218,16 @@ div.mentor-photo img {
   margin: 0 5px;
 }
 
+.event-logo-sm {
+  width: 180px;
+  height: 180px;
+}
+
+.event-logo-sm-container {
+  background-color: var(--blue-highways);
+  padding: 20px;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
   .event-invite {
@@ -231,7 +241,7 @@ div.mentor-photo img {
   }
   img.event-logo {
     max-width: 200px;
-    margin: 20px 40%;
+    margin: 20px 20%;
   }
   .event-invite h1 {
     font-size: 32px;
@@ -248,12 +258,20 @@ div.mentor-photo img {
   .home-page-cover-content .event-invite {
     background: url('../images/nodeschool-yqr-cover.jpg') no-repeat top left var(--blue-highways) fixed;
   }
+  .mentor-photos img {
+    width: 160px;
+    height: 160px;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1200px) {
   .event-invite {
     padding: 70px 15px 30px 250px;
+  }
+  img.event-logo {
+    max-width: 200px;
+    margin: 20px 40%;
   }
   .event-rsvp-action-area {
     padding: 15px;
