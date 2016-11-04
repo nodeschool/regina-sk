@@ -1,18 +1,71 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
+:root {
+  --sunset-red : #EE5340;
+  --dark-sunset-red: #e14f3d;
+  --asphalt-grey : #63666A;
+  --dark-grey: #5c5e62;
+  --dark: #333;
+  --lane-marker-white : #fcfcfc;
+  --lane-marker-white-light: #fff;
+  --blue-highways-dark : #0097A9;
+  --blue-highways: #039eb1;
+  --oceanside-blue-dark : #006272;
+  --oceanside-blue: #0d6b7b;
+  --go-green : #97D700;
+  --go-gree-dark: #8dc900;
+  --grey: #ccc;
+}
+
+
 body {
   font-family: 'Open Sans', arial, helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
-  background: url('../images/nodeschool-yqr-cover.jpg') no-repeat top left #FAFAFA fixed;
+  background: url('../images/nodeschool-yqr-cover.jpg') no-repeat top left var(--lane-marker-white) fixed;
   background-size: 100% 100%;
-  color: #333333;
+  color: var(--asphalt-grey);
 }
+
+h1 {
+  font-family: 'Open Sans Semibold', 'Open Sans', sans-serif;
+  font-size: 38px;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: 'Open Sans Bold', 'Open Sans', sans-serif;
+  font-size: 36px;
+}
+h3 {
+  font-family: 'Open Sans Light', 'Open Sans', sans-serif;
+  font-size: 36px;
+}
+h4 {
+  font-family: 'Open Sans Semibold', 'Open Sans', sans-serif;
+  font-size: 22px;
+}
+h4 {
+  font-family: 'Open Sans Semibold', 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+h6 {
+  font-family: 'Open Sans Light Italic', 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+p {
+  font-family: 'Open Sans Light Italic', 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
 
 body.no-cover {
   background-image: none;
-  background-color: #F2F3F3;
+  background-color: var(--lane-marker-white);
+}
+
+body.grey-body {
+  background-color: var(--grey);
 }
 
 .no-padding {
@@ -23,14 +76,19 @@ body.no-cover {
   margin-top: 0;
 }
 
-#eventRsvpCard {
-  margin-top: -20px;
+.home-page-cover-content {
+  background: url('../images/home-page-cover-bkg.png') no-repeat top center;
+  background-color: var(--blue-highways);
+}
+
+#eventContentArea ul li {
+  line-height: 2em;
 }
 
 img.event-logo {
   max-width: 250px;
   position: absolute;
-  margin-top: 150px;
+  margin-top: 175px;
   margin-left: 40px;
 }
 .code-of-conduct {
@@ -52,23 +110,33 @@ img.event-logo {
   display: block;
 }
 .event-invite {
-  background-color: #0097A9;
-  color: #fff;
-  padding: 80px 0 80px 400px;
+  background-color: var(--blue-highways-dark);
+  color: var(--lane-marker-white-light);
+  padding: 20px 0 80px 400px;
 }
 .event-invite h1, .event-content.registration-content h1 {
   text-transform: uppercase;
   font-size: 48px;
   font-weight: 400;
 }
+#eventRsvpCard {
+  text-shadow: 0 2px var(--dark);
+}
+#eventRsvpCard h1 {
+  text-shadow: 3px 4px var(--dark);
+}
 .event-time {
   padding-left: 20px;
   font-size: 14px;
   font-weight: bold;
 }
+
+.home-page-cover-content .event-invite {
+  background-color: transparent;
+}
 .event-rsvp-action-area, footer {
-  background-color: #E5E5E5;
-  color: #333333;
+  background-color: #e5e5e5;
+  color: var(--asphalt-grey);
 }
 .event-rsvp-action-area {
   padding: 50px 0 50px 400px;
@@ -83,10 +151,10 @@ img.event-logo {
 .event-social-media-links a{
   font-size: 48px;
   margin-right: 20px;
-  color: #fff
+  color: var(--lane-marker-white);
 }
 .event-social-media-links a .fa{
-  color: #fff;
+  color: var(--lane-marker-white);
 }
 .event-details {
   border-radius: 15px;
@@ -108,22 +176,33 @@ img.event-logo {
 }
 
 .before-you-come {
-  background-color: #F05340;
-  color: #fff;
+  background-color: var(--oceanside-blue-dark);
+  color: var(--lane-marker-white);
   margin: 0;
   border-radius: 0;
 }
 .before-you-come a {
-  color: #fff;
+  color: var(--lane-marker-white);
   text-decoration: underline;
 }
 
-.event-content.registration-content {
+.event-content.registration-content,
+.event-details.code-of-conduct {
   padding: 50px 0;
-  background-color: #fff;
-  border: solid 1px #F3F3F3;
+  background-color: var(--lane-marker-white);
+  border: solid 1px var(--asphalt-grey);
   line-height: 1.8em;
   margin-bottom: 20px;
+}
+div.code-of-conduct-container .code-of-conduct {
+  border-radius: 0;
+  padding: 15px 20px;
+  margin: 0 0 50px;
+}
+
+div.code-of-conduct-container img.event-logo {
+  position: relative;
+  margin: 20px auto;
 }
 
 footer {
@@ -132,50 +211,13 @@ footer {
   padding-bottom: 50px;
 }
 
-div.mentor-photo, div.mentor {
-  display: inline-block;
-  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+div.mentor-photos {
+  text-align: center;
 }
-div.mentor-photo {
-  width: 200px;
-  height: 200px;
-  padding: 10px;
-  background-color: #FFFFFF;
-  border: 1px solid #E5E5E5;
+div.mentor-photo img {
+  margin: 0 5px;
 }
-div.mentor {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100% 100%;
-  width: 180px;
-  height: 180px;
-  margin: 0 auto;
-}
-div.mentor-1 .mentor{
-  background-image: url(../images/mentors/DSC_0001.jpg);
-  background-size: 300px 250px;
-}
-div.mentor-2 .mentor{
-  background-image: url(../images/mentors/DSC_0002.jpg);
-  background-size: 130px 180px;
-}
-div.mentor-3 .mentor{
-  background-image: url(../images/mentors/DSC_0003.jpg);
-  background-size: 270px 220px;
-}
-div.mentor-4 .mentor{
-  background-image: url(../images/mentors/DSC_0004.jpg);
-  background-size: 200px 195px;
-}
-div.mentor-5 .mentor{
-  background-image: url(../images/mentors/DSC_0005.jpg);
-  background-size: 250px 180px;
-}
-div.mentor-6 .mentor{
-  background-image: url(../images/mentors/DSC_0006.jpg);
-  background-size: 210px 205px;
-}
+
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
   .event-invite {
@@ -188,8 +230,8 @@ div.mentor-6 .mentor{
     padding: 15px;
   }
   img.event-logo {
-    max-width: 150px;
-    margin: 40px 30%;
+    max-width: 200px;
+    margin: 20px 40%;
   }
   .event-invite h1 {
     font-size: 32px;
@@ -199,6 +241,12 @@ div.mentor-6 .mentor{
   }
   .event-details {
     min-height: auto;
+  }
+  .event-invite h1, .event-content.registration-content h1 {
+    font-size: 26px;
+  }
+  .home-page-cover-content .event-invite {
+    background: url('../images/nodeschool-yqr-cover.jpg') no-repeat top left var(--blue-highways) fixed;
   }
 }
 
@@ -227,6 +275,9 @@ div.mentor-6 .mentor{
     min-height: auto !important;
     padding: 20px;
   }
+  .event-invite h1, .event-content.registration-content h1 {
+    font-size: 14px;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -237,5 +288,15 @@ div.mentor-6 .mentor{
 }
 
 div.tito-wrapper {
-  background-color: #fff;
+  background-color: var(--lane-marker-white);
+}
+
+
+.btn.btn-primary {
+    background-color: var(--blue-highways);
+    border-color: var(--blue-highways-dark);
+    border-radius: 30px;
+}
+.btn.btn-primary:hover {
+  background-color: var(--oceanside-blue-dark);
 }
