@@ -14,5 +14,9 @@ November 19th, 2016
 1:00 - 4:00 PM
 The Rotunda, Innovation Place | 10 Research Drive | Regina, SK
 
+## Join NodeSchool YQR chatter (needs a github account)
+
+[![Join the chat at https://gitter.im/nodeschool/regina-sk](https://badges.gitter.im/nodeschool/regina-sk.svg)](https://gitter.im/nodeschool/regina-sk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 
 Please read about the code of conduct for the event [here](https://github.com/nodeschool/regina-sk/blob/master/Codeofconduct.md)
