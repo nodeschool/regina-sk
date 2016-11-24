@@ -4,16 +4,19 @@
 
 ## What is NodeSchool?
 
-[**NodeSchool**](http://nodeschool.io) is a worldwide series of community learning events focused around open-source workshops that teach web software skills.
+[**NodeSchool**](http://nodeschool.io) is an open source project run by volunteers with two goals: to create high quality programming curriculum and to host community learning events.
 
-On November 19th, join us for the first-ever Saskatchewan chapter: NodeSchool YQR!
+It began in 2013 in Silicon Valley, and has since expanded to become a community of over 170 chapters worldwide; more than 600 events have been held on every continent besides Antarctica.
 
-## Where and When
+## What can I expect at NodeSchool YQR?
 
-November 19th, 2016
-1:00 - 4:00 PM
-The Rotunda, Innovation Place | 10 Research Drive | Regina, SK
+At each workshop, participants will work through interactive tutorials or “workshoppers” that teach programming languages like JavaScript and Node.js. The tutorials are self-guided, but experienced mentors are always on hand to help you through any questions. When you come, you can expect to spend an afternoon with like-minded individuals in the Regina tech community who are there to hang out and learn. Previous coding experience is helpful, but not necessary!
 
-## Join NodeSchool YQR chatter (needs a github account)
 
-[![Join the chat at https://gitter.im/nodeschool/regina-sk](https://badges.gitter.im/nodeschool/regina-sk.svg)](https://gitter.im/nodeschool/regina-sk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+## Past Events
+
+- Saturday, November 19th, 2016 | 1:00-4:00 PM | The Rotunda at Innovation Place, 10 Research Drive (Sponsored by [GasBuddy](https://www.gasbuddy.com/))
+
+## Upcoming Events
+
+- Saturday, January 14th, 2017 | 1:00-4:00 PM | Location TBA
