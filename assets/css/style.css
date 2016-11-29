@@ -196,7 +196,8 @@ img.event-logo {
 }
 div.code-of-conduct-container .code-of-conduct {
   border-radius: 0;
-  padding: 15px 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin: 0 0 50px;
 }
 
@@ -216,6 +217,15 @@ div.mentor-photos {
 }
 div.mentor-photo img {
   margin: 0 5px;
+}
+
+.past-event-details .mentor-photos img {
+  width: 120px;
+  height: 120px;
+}
+
+div.past-event-details.photos img {
+  height: 200px;
 }
 
 .event-logo-sm {
