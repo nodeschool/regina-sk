@@ -23,7 +23,7 @@ body {
   font-size: 14px;
   margin: 0;
   padding: 0;
-  background: url('../images/nodeschool-yqr-cover.jpg') no-repeat top left var(--lane-marker-white) fixed;
+  background: url('../images/node image.png') no-repeat top left var(--lane-marker-white) fixed;
   background-size: 100% 100%;
   color: var(--asphalt-grey);
 }
@@ -77,8 +77,8 @@ body.grey-body {
 }
 
 .home-page-cover-content {
-  background: url('../images/home-page-cover-bkg.png') no-repeat top center;
-  background-color: var(--blue-highways);
+  background: url('../images/new assets/Node image.png') no-repeat top center;
+  ;
 }
 
 #eventContentArea ul li {
@@ -110,8 +110,8 @@ img.event-logo {
   display: block;
 }
 .event-invite {
-  background-color: var(--blue-highways-dark);
-  color: var(--lane-marker-white-light);
+  background-color: var(--lane-marker-white);
+  color: var(--asphalt-gray);
   padding: 20px 0 80px 400px;
 }
 .event-invite h1, .event-content.registration-content h1 {
@@ -176,13 +176,13 @@ img.event-logo {
 }
 
 .before-you-come {
-  background-color: var(--oceanside-blue-dark);
-  color: var(--lane-marker-white);
+  background-color: var(--lane-marker-white);
+  color: var(--asphalt-grey);
   margin: 0;
   border-radius: 0;
 }
 .before-you-come a {
-  color: var(--lane-marker-white);
+  color: var(--oceanside-blue);
   text-decoration: underline;
 }
 
@@ -234,7 +234,7 @@ div.past-event-details.photos img {
 }
 
 .event-logo-sm-container {
-  background-color: var(--blue-highways);
+  background-color: var(--lane-marker-white);
   padding: 20px;
 }
 
@@ -266,7 +266,7 @@ div.past-event-details.photos img {
     font-size: 26px;
   }
   .home-page-cover-content .event-invite {
-    background: url('../images/nodeschool-yqr-cover.jpg') no-repeat top left var(--blue-highways) fixed;
+    background: url('../images/nodeschool-yqr-cover.jpg') no-repeat top left var(--lane-marker-white) fixed;
   }
   .mentor-photos img {
     width: 160px;
