@@ -28,7 +28,7 @@ please contact an organizer immediately.
 ### Nodeschool Regina
 
 * Organizers: Craig Norman @normrider
-* Meetup URL: https://ti.to/gasbuddy-regina/nodeschool-yqr-2
+* Meetup URL: https://nodeschool.io/regina-sk/register.html
 
 **If you have questions or feedback about this Code of Conduct please contact
 one of the organizers.**
