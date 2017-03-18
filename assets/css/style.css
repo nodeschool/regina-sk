@@ -10,7 +10,7 @@
   --lane-marker-white-light: #fff;
   --blue-highways-dark : #0097A9;
   --blue-highways: #039eb1;
-  --oceanside-blue-dark : #006272;
+  --oceanside-blue-dark : #052530;
   --oceanside-blue: #0d6b7b;
   --go-green : #97D700;
   --go-gree-dark: #8dc900;
@@ -81,6 +81,19 @@ body.grey-body {
   background-color: var(--blue-highways);
 }
 
+.event-title {
+  color: var(--lane-marker-white);
+  font-size: 40px !important;
+}
+
+.event-subtitle {
+  color: var(--lane-marker-white);
+}
+
+.small-container {
+  margin: 100px 0;
+}
+
 #eventContentArea ul li {
   line-height: 2em;
 }
@@ -110,8 +123,6 @@ img.event-logo {
   display: block;
 }
 .event-invite {
-  background-color: var(--blue-highways-dark);
-  color: var(--lane-marker-white-light);
   padding: 20px 0 80px 400px;
 }
 .event-invite h1, .event-content.registration-content h1 {
@@ -119,12 +130,7 @@ img.event-logo {
   font-size: 48px;
   font-weight: 400;
 }
-#eventRsvpCard {
-  text-shadow: 0 2px var(--dark);
-}
-#eventRsvpCard h1 {
-  text-shadow: 3px 4px var(--dark);
-}
+
 .event-time {
   padding-left: 20px;
   font-size: 14px;
@@ -175,13 +181,13 @@ img.event-logo {
   max-width: 400px;
 }
 
-.before-you-come {
+.midnight-blue-bkg {
   background-color: var(--oceanside-blue-dark);
   color: var(--lane-marker-white);
   margin: 0;
   border-radius: 0;
 }
-.before-you-come a {
+.midnight-blue-bkg a {
   color: var(--lane-marker-white);
   text-decoration: underline;
 }
@@ -240,6 +246,12 @@ div.past-event-details.photos img {
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
+  .event-title {
+    font-size: 18px !important;
+  }
+  .small-container {
+    margin: 50px 0;
+  }
   .event-invite {
     padding: 230px 15px 15px 15px;
   }
