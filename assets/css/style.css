@@ -225,6 +225,11 @@ div.mentor-photo img {
   margin: 0 5px;
 }
 
+div.mentor-photos img {
+  max-width: 165px;
+  max-height: 190px;
+}
+
 .past-event-details .mentor-photos img {
   width: 120px;
   height: 120px;
