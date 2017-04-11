@@ -345,3 +345,12 @@ div.tito-wrapper {
 .btn.btn-primary:hover {
   background-color: var(--oceanside-blue-dark);
 }
+
+
+div#eventPhotos div.item{
+  text-align: center;
+}
+
+div#eventPhotos img.slide {
+  height: 500px;
+}
