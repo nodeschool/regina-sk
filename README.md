@@ -14,12 +14,13 @@ At each workshop, participants will work through interactive tutorials or “wor
 
 ### Past Events
 
-- NodeSchool YQR | Saturday, November 19th, 2016 | 1:00-4:00 PM | The Rotunda at Innovation Place, 10 Research Drive
+- NODEtrip to YXE | Saturday, April 1st | 1:00 – 4:00 PM | Concourse Building - Innovation Place | 116 Research Dr. | Saskatoon, SK
 - NodeSchool YQR | Saturday, January 14th, 2017 | 1:00-4:00 PM | The Rotunda at Innovation Place, 10 Research Drive
+- NodeSchool YQR | Saturday, November 19th, 2016 | 1:00-4:00 PM | The Rotunda at Innovation Place, 10 Research Drive
 
 ### Upcoming Events
 
-- NODEtrip to YXE | Saturday, April 1st | 1:00 – 4:00 PM | Concourse Building - Innovation Place | 116 Research Dr. | Saskatoon, SK
+NodeSchool YQR | The Rotunda, Innovation Place | May 6th, 2017 | 1PM - 4PM
 
 ### More Info
 
