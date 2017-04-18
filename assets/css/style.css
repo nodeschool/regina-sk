@@ -196,7 +196,13 @@ a, a:active, a:hover {
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-
+  .header h1.title {
+    font-size: 42px;
+  }
+  .header .logo-container .event-logo {
+    max-width: 73%;
+    height: auto;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
