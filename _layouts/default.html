@@ -5,18 +5,15 @@
   <title>NodeSchool YQR - {{ page.title }}</title>
   {% include top.html %}
 </head>
-<body class="no-cover grey-body">
-  <div class="container no-padding code-of-conduct-container">
+<body>
+  {% include header.html %}
 
-    <div class="text-center event-logo-container">
-      <a href="../../index">
-        <img src="../../assets/images/nodeschool-yqr.png" alt="NodeSchool YQR" class="event-logo" />
-      </a>
-    </div>
-
+  <div class="page-content">
+    <div class="container">
     {{ content }}
-
+    </div>
   </div>
+
   {% include scripts.html %}
 </body>
 </html>

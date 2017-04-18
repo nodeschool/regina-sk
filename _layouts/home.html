@@ -5,8 +5,12 @@
   <title>NodeSchool YQR - {{ page.title }}</title>
   {% include top.html %}
 </head>
-<body class="no-cover">
-  {{ content }}
+<body>
+  {% include header_with_registration.html %}
+
+  <div class="page-content-after-registration">
+    {{ content }}
+  </div>
 
   {% include scripts.html %}
 </body>
