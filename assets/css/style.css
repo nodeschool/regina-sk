@@ -1,37 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
 :root {
-  --sunset-red : #EE5340;
-  --dark-sunset-red: #e14f3d;
-  --asphalt-grey : #63666A;
-  --dark-grey: #5c5e62;
-  --dark: #333;
-  --lane-marker-white : #fcfcfc;
-  --lane-marker-white-light: #fff;
-  --blue-highways-dark : #0097A9;
-  --blue-highways: #039eb1;
-  --oceanside-blue-dark : #052530;
-  --oceanside-blue: #0d6b7b;
-  --go-green : #97D700;
-  --go-gree-dark: #8dc900;
-  --grey: #ccc;
+  --blue: #0096A9;
+  --dark-green: #002530;
+  --carmine-pink: #ee5340;
+  --asphalt-gray: #4C4C4C;
+  --white: #ffffff;
+  --light-gray: #e5e5e5;
 }
 
 
 body {
   font-family: 'Open Sans', arial, helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
   padding: 0;
-  background: url('../images/nodeschool-yqr-cover.jpg') no-repeat top left var(--lane-marker-white) fixed;
-  background-size: 100% 100%;
   color: var(--asphalt-grey);
+  line-height: 2em;
 }
 
 h1 {
   font-family: 'Open Sans Semibold', 'Open Sans', sans-serif;
   font-size: 38px;
-  text-transform: uppercase;
 }
 h2 {
   font-family: 'Open Sans Bold', 'Open Sans', sans-serif;
@@ -55,302 +45,176 @@ h6 {
 }
 p {
   font-family: 'Open Sans Light Italic', 'Open Sans', sans-serif;
-  font-size: 14px;
 }
 
-
-body.no-cover {
-  background-image: none;
-  background-color: var(--lane-marker-white);
+a, a:active, a:hover {
+  color: var(--blue);
 }
 
-body.grey-body {
-  background-color: var(--grey);
+.btn {
+  border-radius: 25px;
+}
+
+.header {
+  background: url('../images/Hero.png') no-repeat center top #0096A9;
+  color: var(--white);
+  min-height: 500px;
+}
+
+.header.with-registration,
+.header.past-event-page-header {
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  min-height: auto;
+}
+
+.header h1.title {
+  font-size: 68px;
+  font-weight: 500;
+  text-transform: none;
+  padding: 20px 0;
+}
+
+.header .logo-container .event-logo {
+  width: 280px;
+  height: 300px;
+  margin: 20px 0;
+}
+
+.header p.event-registration-detail {
+  font-size: 22px;
+  font-weight: 100;
+}
+
+.register-button {
+  font-size: 18px;
+  min-width: 200px;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
+.register-button:hover {
+  background-color: var(--white) !important;
+  color: var(--blue) !important;
+}
+
+.page-content,
+.page-content-after-registration,
+.past-event-page-content {
+  background: #fff;
+  min-height: 800px;
+}
+.page-content-after-registration {
+  margin-top: 620px;
+}
+.past-event-page-content {
+  margin-top: 500px;
+}
+.page-content {
+  margin-top: 20px;
+}
+
+.section {
+  border-top: 25px solid var(--dark-green);
+  padding-top: 45px;
+}
+
+.section-header, .section-content {
+  padding: 0 50px;
+}
+
+.section-title {
+  color: var(--blue);
+}
+
+.section-content {
+  line-height: 2em;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+}
+
+.sub-section-with-bkg {
+  background: url('../images/InfoBg.png') repeat-x transparent;
+}
+
+.sub-section-content {
+  padding: 20px 50px;
 }
 
 .no-padding {
   padding: 0;
 }
 
-.no-margin-top {
-  margin-top: 0;
-}
-
-.home-page-cover-content {
-  background: url('../images/home-page-cover-bkg.png') no-repeat top center;
-  background-color: var(--blue-highways);
-}
-
-.event-title {
-  color: var(--lane-marker-white);
-  font-size: 40px !important;
-}
-
-.event-subtitle {
-  color: var(--lane-marker-white);
-}
-
-.small-container {
-  margin: 100px 0;
-}
-
-#eventContentArea ul li {
-  line-height: 2em;
-}
-
-img.event-logo {
-  max-width: 250px;
-  position: absolute;
-  margin-top: 175px;
-  margin-left: 40px;
-}
-.code-of-conduct {
-  line-height: 1.7em;
-  margin-bottom: 50px;
-}
-.code-of-conduct h2 {
-  margin-top: 40px;
-}
-.code-of-conduct #title {
-  margin-top: 0;
-  margin-bottom: 40px;
-}
-.code-of-conduct .event-logo {
-  position: relative;
-  margin: 40px auto;
-  max-width: 200px;
-  text-align: center;
-  display: block;
-}
-.event-invite {
-  padding: 20px 0 80px 400px;
-}
-.event-invite h1, .event-content.registration-content h1 {
-  text-transform: uppercase;
-  font-size: 48px;
-  font-weight: 400;
-}
-
-.event-time {
-  padding-left: 20px;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.home-page-cover-content .event-invite {
-  background-color: transparent;
-}
-.event-rsvp-action-area, footer {
-  background-color: #e5e5e5;
-  color: var(--asphalt-grey);
-}
-.event-rsvp-action-area {
-  padding: 50px 0 50px 400px;
-}
-#bottomEventRsvpContainer {
-  padding: 20px 0;
-}
-#bottomEventRsvpContainer .btn {
-  font-size: 26px;
-  text-transform: uppercase;
-}
-.event-social-media-links a{
-  font-size: 48px;
-  margin-right: 20px;
-  color: var(--lane-marker-white);
-}
-.event-social-media-links a .fa{
-  color: var(--lane-marker-white);
-}
-.event-details {
-  border-radius: 15px;
-  padding: 40px ;
-  margin: 40px;
-  min-height: 400px;
-  line-height: 1.7em;
-}
-.que {
-  font-weight: 600;
-}
-.ans {
-  font-size: 14px;
-  padding-left: 20px;
-}
-
-.event-sponsors img {
-  max-width: 400px;
-}
-
-.midnight-blue-bkg {
-  background-color: var(--oceanside-blue-dark);
-  color: var(--lane-marker-white);
-  margin: 0;
-  border-radius: 0;
-}
-.midnight-blue-bkg a {
-  color: var(--lane-marker-white);
-  text-decoration: underline;
-}
-
-.event-content.registration-content,
-.event-details.code-of-conduct {
+.gray-section {
+  background-color: var(--light-gray);
   padding: 50px 0;
-  background-color: var(--lane-marker-white);
-  border: solid 1px var(--asphalt-grey);
-  line-height: 1.8em;
-  margin-bottom: 20px;
-}
-div.code-of-conduct-container .code-of-conduct {
-  border-radius: 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin: 0 0 50px;
+  font-size: 22px;
+  font-weight: 100;
 }
 
-div.code-of-conduct-container img.event-logo {
-  position: relative;
-  margin: 20px auto;
+.gray-section .section-title {
+  font-size: 52px;
+}
+.gray-section .register-button,
+.gray-section .register-button:hover {
+  background-color: var(--carmine-pink) !important;
+  color: var(--white) !important;
+  font-size: 22px;
+  border: 0 none;
+  padding: 10px 30px;
 }
 
-footer {
-  margin-top: -15px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+.green-section {
+  background-color: var(--dark-green);
+  color: var(--white);
+  padding: 50px 50px 0 50px;
 }
 
-div.mentor-photos {
-  text-align: center;
-}
-div.mentor-photo img {
-  margin: 0 5px;
-}
-
-div.mentor-photos img {
-  max-width: 165px;
-  max-height: 190px;
+.green-section a {
+  color: var(--white);
+  font-size: 22px;
+  font-weight: 100;
 }
 
-.past-event-details .mentor-photos img {
-  width: 120px;
-  height: 120px;
+.sponsor-image {
+  max-width: 30%;
 }
 
-div.past-event-details.photos img {
-  height: 200px;
+.mentor-section {
+  padding: 50px;
 }
 
-.event-logo-sm {
-  width: 180px;
-  height: 180px;
-}
-
-.event-logo-sm-container {
-  background-color: var(--blue-highways);
-  padding: 20px;
+.mentor-photos img {
+  max-width: 167px;
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  .event-title {
-    font-size: 18px !important;
+  .header h1.title {
+    font-size: 42px;
   }
-  .small-container {
-    margin: 50px 0;
-  }
-  .event-invite {
-    padding: 230px 15px 15px 15px;
-  }
-  .event-rsvp-action-area {
-    padding: 15px;
-  }
-  .event-details {
-    padding: 15px;
-  }
-  img.event-logo {
-    max-width: 200px;
-    margin: 20px 20%;
-  }
-  .event-invite h1 {
-    font-size: 32px;
-  }
-  .event-time {
-    font-weight: normal;
-  }
-  .event-details {
-    min-height: auto;
-  }
-  .event-invite h1, .event-content.registration-content h1 {
-    font-size: 26px;
-  }
-  .home-page-cover-content .event-invite {
-    background: url('../images/nodeschool-yqr-cover.jpg') no-repeat top left var(--blue-highways) fixed;
-  }
-  .mentor-photos img {
-    width: 160px;
-    height: 160px;
+  .header .logo-container .event-logo {
+    max-width: 73%;
+    height: auto;
   }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1200px) {
-  .event-invite {
-    padding: 70px 15px 30px 250px;
-  }
-  img.event-logo {
-    max-width: 200px;
-    margin: 20px 40%;
-  }
-  .event-rsvp-action-area {
-    padding: 15px;
-  }
-  .event-details {
-    padding: 15px;
-  }
-  img.event-logo {
-    max-width: 180px;
-    margin-top: 50px;
-  }
-  .event-invite h1 {
-    font-size: 32px;
-  }
-  .event-time {
-    font-weight: normal;
-  }
-  .event-details {
-    min-height: auto !important;
-    padding: 20px;
-  }
-  .event-invite h1, .event-content.registration-content h1 {
-    font-size: 14px;
-  }
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px)  {
-  pull-left-lg {
-    float: left;
-  }
+
 }
 
 div.tito-wrapper {
-  background-color: var(--lane-marker-white);
-}
 
-
-.btn.btn-primary {
-    background-color: var(--blue-highways);
-    border-color: var(--blue-highways-dark);
-    border-radius: 30px;
-}
-.btn.btn-primary:hover {
-  background-color: var(--oceanside-blue-dark);
-}
-
-
-div#eventPhotos div.item{
-  text-align: center;
-}
-
-div#eventPhotos img.slide {
-  height: 500px;
 }
