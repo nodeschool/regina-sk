@@ -29,7 +29,7 @@ h2 {
 }
 h3 {
   font-family: 'Open Sans Light', 'Open Sans', sans-serif;
-  font-size: 36px;
+  font-size: 34px;
 }
 h4 {
   font-family: 'Open Sans Semibold', 'Open Sans', sans-serif;
@@ -194,14 +194,74 @@ a, a:active, a:hover {
   max-width: 167px;
 }
 
+.que {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sub-section-with-bkg .sub-section-content h3.section-title {
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.registration-content .section-title {
+  font-size: 27px;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
   .header h1.title {
     font-size: 42px;
   }
   .header .logo-container .event-logo {
-    max-width: 73%;
+    max-width: 50%;
     height: auto;
+  }
+  .header p.event-registration-detail {
+    font-size: 18px;
+  }
+  .page-content-after-registration {
+    margin-top: 560px;
+  }
+  .page-content-after-registration .section-header img {
+    max-width: 30%;
+  }
+  .section-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  h3.section-title,
+  .sub-section-with-bkg .sub-section-content h3.section-title {
+    font-size: 20px;
+  }
+  .sub-section-content {
+    padding: 20px;
+  }
+  .sub-section-with-bkg {
+    background-repeat: repeat-y;
+  }
+  .green-section {
+    padding: 20px;
+  }
+  .green-section a,
+  .gray-section p {
+    font-size: 15px;
+  }
+  .gray-section {
+    padding: 30px;
+  }
+  .gray-section .section-title {
+    font-size: 26px;
+  }
+  .gray-section .sponsor-image {
+    max-width: 80%;
+  }
+  .past-event-page-content {
+    margin-top: 390px;
+  }
+  .past-event-page-content .section-title {
+    font-size: 26px;
   }
 }
 
