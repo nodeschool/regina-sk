@@ -208,7 +208,7 @@ a, a:active, a:hover {
   font-size: 27px;
 }
 
-/* Small devices (tablets, 768px and up) */
+/* Small devices (iPhones, 768px and up) */
 @media (max-width: 768px) {
   .header h1.title {
     font-size: 42px;
@@ -262,6 +262,16 @@ a, a:active, a:hover {
   }
   .past-event-page-content .section-title {
     font-size: 26px;
+  }
+}
+
+/* Tablet devices (ipads, 768px and 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .page-content-after-registration {
+    margin-top: 620px;
+  }
+  .past-event-page-content {
+    margin-top: 500px;
   }
 }
 
