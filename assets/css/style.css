@@ -184,6 +184,8 @@ a, a:active, a:hover {
 
 .sponsor-image {
   max-width: 30%;
+  display: inline-block;
+  margin: 20px;
 }
 
 .mentor-section {
@@ -206,6 +208,14 @@ a, a:active, a:hover {
 
 .registration-content .section-title {
   font-size: 27px;
+}
+
+.registration-page-footer .gray-section {
+  background-color: #fff;
+}
+
+.registration-page-footer .section-title {
+  font-size: 28px;
 }
 
 /* Small devices (iPhones, 768px and up) */
@@ -256,6 +266,7 @@ a, a:active, a:hover {
   }
   .gray-section .sponsor-image {
     max-width: 80%;
+    display: inline-block;
   }
   .past-event-page-content {
     margin-top: 390px;
