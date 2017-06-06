@@ -70,6 +70,10 @@ a, a:active, a:hover {
   min-height: auto;
 }
 
+.no-registration {
+  margin-top: 500px !important;
+}
+
 .header h1.title {
   font-size: 68px;
   font-weight: 500;
@@ -274,12 +278,18 @@ a, a:active, a:hover {
   .past-event-page-content .section-title {
     font-size: 26px;
   }
+  .no-registration {
+    margin-top: 400px !important;
+  }
 }
 
 /* Tablet devices (ipads, 768px and 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .page-content-after-registration {
     margin-top: 620px;
+  }
+  .no-registration {
+    margin-top: 400px !important;
   }
   .past-event-page-content {
     margin-top: 500px;
