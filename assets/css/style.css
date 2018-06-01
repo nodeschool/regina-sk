@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
 :root {
-  --blue: #0096A9;
-  --dark-green: #002530;
-  --carmine-pink: #ee5340;
-  --asphalt-gray: #4C4C4C;
+  --blue-highways: #0097A9;
+  --dark-green: #00606A;
+  --sunset-red: #ee5340;
+  --grey: #4A4A4A;
   --white: #ffffff;
-  --light-gray: #e5e5e5;
+  --light-grey: #F4F4F4;
 }
 
 
@@ -48,7 +48,7 @@ p {
 }
 
 a, a:active, a:hover {
-  color: var(--blue);
+  color: var(--blue-highways);
 }
 
 .btn {
@@ -56,7 +56,7 @@ a, a:active, a:hover {
 }
 
 .header {
-  background: url('../images/Hero.png') no-repeat center top var(--blue);
+  background: url('../images/Hero.png') no-repeat center top var(--blue-highways);
   color: var(--white);
   min-height: 500px;
 }
@@ -104,13 +104,13 @@ a, a:active, a:hover {
 
 .register-button:hover {
   background-color: var(--white) !important;
-  color: var(--blue) !important;
+  color: var(--blue-highways) !important;
 }
 
 .page-content,
 .page-content-after-registration,
 .past-event-page-content {
-  background: #fff;
+  background: var(--white);
   min-height: 800px;
 }
 .page-content-after-registration {
@@ -133,7 +133,7 @@ a, a:active, a:hover {
 }
 
 .section-title {
-  color: var(--blue);
+  color: var(--blue-highways);
 }
 
 .section-content {
@@ -156,7 +156,7 @@ a, a:active, a:hover {
 }
 
 .gray-section {
-  background-color: var(--light-gray);
+  background-color: var(--light-grey);
   padding: 50px 0;
   font-size: 22px;
   font-weight: 100;
@@ -167,7 +167,7 @@ a, a:active, a:hover {
 }
 .gray-section .register-button,
 .gray-section .register-button:hover {
-  background-color: var(--carmine-pink) !important;
+  background-color: var(--sunset-red) !important;
   color: var(--white) !important;
   font-size: 22px;
   border: 0 none;
@@ -215,7 +215,7 @@ a, a:active, a:hover {
 }
 
 .registration-page-footer .gray-section {
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .registration-page-footer .section-title {
@@ -239,7 +239,7 @@ a, a:active, a:hover {
     font-size: 18px;
   }
   .page-content-after-registration {
-    margin-top: 560px;
+    margin-top: 580px;
   }
   .page-content-after-registration .section-header img {
     max-width: 30%;
@@ -285,10 +285,17 @@ a, a:active, a:hover {
   .no-registration {
     margin-top: 400px !important;
   }
+  .no-padding {
+    margin-right: 0;
+  }
 }
 
 /* Tablet devices (ipads, 768px and 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+  .header.with-registration,
+  .header.past-event-page-header {
+    max-width: 100%;
+  }
   .page-content-after-registration {
     margin-top: 620px;
   }
